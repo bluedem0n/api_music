@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>API Music</title>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/vendor/materialize.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+	<link rel="icon" href="img/favicon.png" type="image/x-icon" />
 </head>
-
-<body>
-	<h1 class="text-center">API MUSIC</h1>
-
-	<div class="terminos-y-condiciones">Al continuar, aceptas nuestros <b>Términos de servicio</b> y <b>Política de privacidad</b></div>
-	<fb:login-button type="button" onlogin="window.location = 'login.html'">
-		Inicia sesión con Facebook
-	</fb:login-button>
-		<!-- 	<h4>Boton de salir</h4> -->
-		<!-- 	<div class="fb-login-button" data-max-rows="1" data-size="medium" -->
-		<!-- 		data-show-faces="true" data-auto-logout-link="true"></div> -->
-
+<body class="fondo-login">
+	<div class="logo center">
+		<img src="img/logo.png" alt="">
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="login">
+				<div class="col m6">
+					<fb:login-button type="button" onlogin="window.location = 'buscar-voz.html'">
+						Inicia sesión con Facebook
+					</fb:login-button>
+				</div>
+			</div>
+			<div class="frase">
+				<div class="col m6">
+					<h4>Encuentra y disfruta la música de tus artistas favoritos </h4>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/fb.js"></script>
 </body>
 
