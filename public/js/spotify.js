@@ -1,68 +1,67 @@
-// Login con Spotify
 (function() {
-        var stateKey = 'spotify_auth_state';
-        
-        function getHashParams() {
-          var hashParams = {};
-          var e, r = /([^&;=]+)=?([^&;]*)/g,
-              q = window.location.hash.substring(1);
-          while ( e = r.exec(q)) {
-             hashParams[e[1]] = decodeURIComponent(e[2]);
-          }
-          return hashParams;
+
+    function getHashParams() {
+        var hashParams = {};
+        var e, r = /([^&;=]+)=?([^&;]*)/g,
+            q = window.location.hash.substring(1);
+        while ( e = r.exec(q)) {
+            hashParams[e[1]] = decodeURIComponent(e[2]);
         }
-        
-        function generateRandomString(length) {
-          var text = '';
-          var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-          for (var i = 0; i < length; i++) {
-            text += possible.charAt(Math.floor(Math.random() * possible.length));
-          }
-          return text;
-        };
-        var userProfileSource = document.getElementById('user-profile-template').innerHTML,
-            userProfileTemplate = Handlebars.compile(userProfileSource),
-            userProfilePlaceholder = document.getElementById('user-profile');
-            oauthSource = document.getElementById('oauth-template').innerHTML,
+        return hashParams;
+    }
+
+    var userProfileSource = document.getElementById("user-profile-template").innerHTML,
+        userProfileTemplate = Handlebars.compile(userProfileSource),
+        userProfilePlaceholder = document.getElementById("user-profile");
+
+        var oauthSource = document.getElementById("oauth-template").innerHTML,
             oauthTemplate = Handlebars.compile(oauthSource),
-            oauthPlaceholder = document.getElementById('oauth');
+            oauthPlaceholder = document.getElementById("oauth");
+
         var params = getHashParams();
+
         var access_token = params.access_token,
-            state = params.state,
-            storedState = localStorage.getItem(stateKey);
-        if (access_token && (state == null || state !== storedState)) {
-          alert('Ocurrio un error durante la Autenticación');
+            refresh_token = params.refresh_token,
+            error = params.error;
+
+        if (error) {
+            alert("There was an error during the authentication");
         } else {
-          localStorage.removeItem(stateKey);
-          if (access_token) {
+            if (access_token) {
+                oauthPlaceholder.innerHTML = oauthTemplate({
+                    access_token: access_token,
+                    refresh_token: refresh_token
+                });
+
             $.ajax({
-                url: 'https://api.spotify.com/v1/me',
+                url: "https://api.spotify.com/v1/me",
                 headers: {
-                  'Authorization': 'Bearer ' + access_token
+                  "Authorization": "Bearer " + access_token
                 },
                 success: function(response) {
-                  userProfilePlaceholder.innerHTML = userProfileTemplate(response);
-                  $('#login').hide();
-                  $('#loggedin').show();
+                    userProfilePlaceholder.innerHTML = userProfileTemplate(response);
+                    $("#login").hide();
+                    $("#loggedin").show();
                 }
             });
-          } else {
-              $('#login').show();
-              $('#loggedin').hide();
-          }
-          document.getElementById('login-button').addEventListener('click', function() {
-            var client_id = 'a8556ddfad6a4136883d2c2dc6904f51'; // Tu Client ID
-            var redirect_uri = 'http://localhost:8085'; // Tu Redirect URI (Dirección URL a donde quieres que redireccione luego de iniciar Sesión Con tu cuenta de Spotify.)
-            var state = generateRandomString(16);
-            localStorage.setItem(stateKey, state);
-            var scope = 'user-read-private user-read-email';
-            var url = 'https://accounts.spotify.com/authorize';
-            url += '?response_type=token';
-            url += '&client_id=' + encodeURIComponent(client_id);
-            url += '&scope=' + encodeURIComponent(scope);
-            url += '&redirect_uri=' + encodeURIComponent(redirect_uri);
-            url += '&state=' + encodeURIComponent(state);
-            window.location = url;
-          }, false);
-        }
-      })();
+            } else {
+                $("#login").show();
+                $("#loggedin").hide();
+            }
+        
+        document.getElementById("obtain-new-token").addEventListener("click", function() {
+            $.ajax({
+                url: "/refresh_token",
+                data: {
+                    "refresh_token": refresh_token
+                }
+            }).done(function(data) {
+                    access_token = data.access_token;
+                    oauthPlaceholder.innerHTML = oauthTemplate({
+                    access_token: access_token,
+                    refresh_token: refresh_token
+                });
+            });
+        }, false);
+    }
+})();
