@@ -29,7 +29,7 @@ body{
 	font-size: 15rem;
 }
 .mic h4{
-	
+	background: rgba(0,0,0,0.5); 
     padding: 2vh;
 }
 .mic p{
