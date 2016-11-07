@@ -114,3 +114,10 @@ body {
 .cover.playing {
 	border: 5px solid #e45343;
 }
+
+
+/* Busqueda  por voz */
+
+#reproductor {
+	margin-top: 200px;
+}
