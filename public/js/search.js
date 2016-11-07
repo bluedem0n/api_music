@@ -1,7 +1,5 @@
 // find template and compile it
-var templateSource = document.getElementById('results-template').innerHTML,
-    template = Handlebars.compile(templateSource),
-    resultsPlaceholder = document.getElementById('results'),
+var resultsPlaceholder = document.getElementById('results'),
     playingCssClass = 'playing',
     audioObject = null;
 
@@ -14,6 +12,8 @@ var fetchTracks = function (albumId, callback) {
     });
 };
 
+var plantilla = "<div style='background-image: url(__fondo__)'; class='cover'></div>"
+
 var searchAlbums = function (query) {
     $.ajax({
         url: 'https://api.spotify.com/v1/search',
@@ -22,7 +22,13 @@ var searchAlbums = function (query) {
             type: 'album'
         },
         success: function (response) {
-            resultsPlaceholder.innerHTML = template(response);
+            
+            var albums = response.albums.items;
+            var html = "";
+            for (var i = 0, l = albums.length; i < l; i++) {
+                html += plantilla.replace("__fondo__", albums[i].images[0].url);
+            }
+            $("#results").html(html); 
         }
     });
 };

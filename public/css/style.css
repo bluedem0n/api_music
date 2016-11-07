@@ -27,3 +27,7 @@
 .cover.playing {
     border: 5px solid #e45343;
 }
+
+.none {
+    display: none;
+}
