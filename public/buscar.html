@@ -3,20 +3,54 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Buscar</title>
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/vendor/materialize.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
 	<link rel="icon" href="img/favicon.png" type="image/x-icon"/>
 </head>
 <body class="fondo-voz">
-	<div class="logo center">
-		<img src="img/logo.png" alt="">
+	<div class="row">
+		<div class="col m2">
+			<ul id="slide-out" class="side-nav fixed">
+				<li><div class="userView">
+<!-- 					<div class="background">
+						<img src="img/perfil.jpg">
+					</div> -->
+					<a href="#!user"><img class="circle" src="img/img-1.jpg"></a>
+					<a href="#!name"><span class="name purple-text text-darken-2">John Doe</span></a>
+					<a href="#!email"><span class="email purple-text text-darken-2">jdandturk@gmail.com</span></a>
+				</div></li>
+				<div class="divider"></div>
+				<li><div class="share-icons">
+					<div class="facebook">
+						<iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button&size=large&mobile_iframe=false&width=98&height=28&appId" width="98" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+						<div id="fb-root"></div>
+					</div>
+					<div class="twitter">
+						<a href="https://twitter.com/share" class="twitter-share-button" data-size="large">Tweet</a>
+					</div>
+				</div></li>
+				<div class="divider"></div>
+				<li><a href="#!" class="purple-text text-darken-2">Canciones Favoritas</a></li>
+				<div class="divider"></div>
+				<li><a href="#!" class="purple-text text-darken-2">Cerrar Sesión</a></li>
+		    </ul>
+    		<a href="#" data-activates="slide-out" class="button-collapse name purple-text text-darken-3"><i class="material-icons">menu</i></a>
+		</div>	
+		<div class="col m10">
+			<div class="logo center">
+				<a href="index.html"><img src="img/logo.png" alt=""></a>
+			</div>
+			<div class="mic center-align">
+				<i class="material-icons">mic</i>
+				<h4>Menciona la canción o artista que quieres escuchar</h4>
+				<p>&copy; 2016 Apimusic.com<p>
+			</div>
+		</div>
 	</div>
-	<div class="mic center-align">
-		<i class="material-icons">mic</i>
-		<h4>Menciona la canción o artista que quieres escuchar</h4>
-		<p>&copy; 2016 Apimusic.com<p>
-	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+	<script type="text/javascript" src="js/vendor/materialize.js"></script>
 </body>
 </html>

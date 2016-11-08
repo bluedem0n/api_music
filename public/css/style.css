@@ -2,7 +2,6 @@ body {
 	font-family: 'Unica One', cursive;
 }
 
-
 /*PÁGINA lOGIN-MUSIC*/
 
 .fondo-login {
@@ -12,15 +11,23 @@ body {
 	background-position-y: -20vh;
 }
 
-.frase h4 {
+.login{
 	position: relative;
-	color: white;
-	padding: 4vh;
-	font-size: 2.7rem;
+	top: 20vh;
 	background: rgba(0, 0, 0, 0.5);
-	top: 15vh;
 }
 
+.fb{
+	padding-bottom: 3vh;
+}
+
+.frase h4 {
+	color: white;
+	font-size: 2.7rem;
+}
+.botones{
+	padding: 4vh;
+}
 
 /*PÁGINA BUSCAR-VOZ*/
 
@@ -52,34 +59,15 @@ body {
 	height: 25vh;
 }
 
-
-/*PÁGINA RESULTADO-BÚSQUEDA*/
-
-.fondo-resultado {
-	background-image: url(../img/img-2.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
+.share-icons{
+	padding-left: 2.5vh;
+	padding-top: 2.5vh;
 }
+/*Class for when element is pinned*/
 
-.album-music img {
-	height: 45vh;
-	border: solid white 1vh;
+.pinned {
+	position: fixed !important;
 }
-
-.resultado i {
-	color: white;
-	font-size: 7rem;
-	padding-top: 8vh;
-}
-
-.sonido1,
-.sonido2,
-.sonido3 {
-	height: 21vh;
-	width: 100%;
-	background: rgba(0, 0, 0, 0.5);
-}
-
 
 /* Estilo de search - Paola */
 
