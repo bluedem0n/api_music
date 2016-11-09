@@ -4,7 +4,7 @@ var querystring = require("querystring");
 var cookieParser = require("cookie-parser");
 var client_id = "a8556ddfad6a4136883d2c2dc6904f51";
 var client_secret = "97452f806f1743f38e00bebcfc606a49";
-var redirect_uri = "http://localhost:8085/search.html";
+var redirect_uri = "https://sthecrash.github.io/api_music/public/search.html";
 
 var generateRandomString = function(length) {
     var text = "";
