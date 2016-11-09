@@ -1,29 +1,162 @@
-#login, #loggedin {
-    display: none;
+body {
+	font-family: 'Unica One', cursive;
+}
+
+/*PÁGINA lOGIN-MUSIC*/
+
+.fondo-login {
+	background-image: url(../img/img-1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y: -20vh;
+}
+
+.login{
+	position: relative;
+	top: 20vh;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.fb{
+	padding-bottom: 3vh;
+}
+
+.frase h4 {
+	color: white;
+	font-size: 2.7rem;
+}
+.botones{
+	padding: 4vh;
+}
+
+/*PÁGINA BUSCAR-VOZ*/
+
+.fondo-voz {
+	background-image: url(../img/img-3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.buscar-voz{
+    padding-left: 12vh;
+}
+.mic {
+	color: white;
+}
+
+.mic i {
+	font-size: 15rem;
+}
+
+.mic h4 {
+	background: rgba(0, 0, 0, 0.5);
+	padding: 2vh;
+}
+
+.mic p {
+	position: relative;
+	top: 7vh;
+}
+
+.logo img {
+	height: 25vh;
+}
+
+.share-icons{
+	padding-left: 2.5vh;
+	padding-top: 2.5vh;
+}
+/*Class for when element is pinned*/
+
+.pinned {
+	position: fixed !important;
+}
+
+/* Estilo de search - Paola */
+
+#login,
+#loggedin {
+	display: none;
 }
 
 .text-overflow {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 500px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 500px;
 }
 
-#search-form, .form-control {
-    margin-bottom: 20px;
+ul {
+    margin-left: 30px;
 }
 
-.cover {
-    width: 300px;
-    height: 300px;
-    display: inline-block;
-    background-size: cover;
+.action, .recognized {
+    padding: 10px;
+    position: relative;
+    margin-bottom: 10px;
+    width:80%;
 }
 
-.cover:hover {
-    cursor: pointer;
+.action {
+    text-align: right;
+    background-color: #ddd;
+    margin-left:20%;
+    border-radius: 5px 5px 0 5px;
+    color: purple;
 }
 
-.cover.playing {
-    border: 5px solid #e45343;
+.action:after {
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 18px;
+    border-style: solid;
+    border-color: transparent transparent #ddd transparent;
+    bottom: 0px;
+    right: -17px;
+}
+
+.recognized {
+    text-align: left;
+    background-color: #eee;
+    color: purple;
+    font-weight: bold;
+    border-radius: 5px 5px 5px 0;
+}
+
+.recognized:after {
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 18px;
+    border-style: solid;
+    border-color: transparent transparent #eee transparent;
+    bottom: 0px;
+    left: -17px;
+}
+
+.recognized > div:before {
+    content: open-quote
+}
+
+.recognized > div:after {
+    content: close-quote
+}
+
+#conversation {
+    padding: 20px;
+}
+
+#conversation::before {
+    content:"";
+    height: 1px;
+    width: 200px;
+    background-color: #ddd;
+    display: block;
+    margin: 10px auto;
+}
+
+#conversation img {
+    margin-top: 5px;
 }
