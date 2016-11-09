@@ -71,6 +71,28 @@ body {
 	position: fixed !important;
 }
 
+/*PÁGINA RESULTADO-BÚSQUEDA*/
+
+.fondo-resultado {
+    background-image: url(../img/img-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.resultado i {
+    color: white;
+    font-size: 7rem;
+    padding-top: 8vh;
+}
+
+.sonido1,
+.sonido2,
+.sonido3 {
+    height: 21vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
 /* Estilo de search - Paola */
 
 #login,
