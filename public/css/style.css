@@ -2,6 +2,7 @@ body {
 	font-family: 'Unica One', cursive;
 }
 
+
 /*PÁGINA lOGIN-MUSIC*/
 
 .fondo-login {
@@ -11,13 +12,13 @@ body {
 	background-position-y: -20vh;
 }
 
-.login{
+.login {
 	position: relative;
 	top: 20vh;
 	background: rgba(0, 0, 0, 0.5);
 }
 
-.fb{
+.fb {
 	padding-bottom: 3vh;
 }
 
@@ -25,9 +26,11 @@ body {
 	color: white;
 	font-size: 2.7rem;
 }
-.botones{
+
+.botones {
 	padding: 4vh;
 }
+
 
 /*PÁGINA BUSCAR-VOZ*/
 
@@ -36,9 +39,11 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-.buscar-voz{
-    padding-left: 12vh;
+
+.buscar-voz {
+	padding-left: 12vh;
 }
+
 .mic {
 	color: white;
 }
@@ -61,37 +66,41 @@ body {
 	height: 25vh;
 }
 
-.share-icons{
+.share-icons {
 	padding-left: 2.5vh;
 	padding-top: 2.5vh;
 }
+
+
 /*Class for when element is pinned*/
 
 .pinned {
 	position: fixed !important;
 }
 
+
 /*PÁGINA RESULTADO-BÚSQUEDA*/
 
 .fondo-resultado {
-    background-image: url(../img/img-2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+	background-image: url(../img/img-2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .resultado i {
-    color: white;
-    font-size: 7rem;
-    padding-top: 8vh;
+	color: white;
+	font-size: 7rem;
+	padding-top: 8vh;
 }
 
 .sonido1,
 .sonido2,
 .sonido3 {
-    height: 21vh;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.5);
+	height: 21vh;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
 }
+
 
 /* Estilo de search - Paola */
 
@@ -108,77 +117,78 @@ body {
 }
 
 ul {
-    margin-left: 30px;
+	margin-left: 30px;
 }
 
-.action, .recognized {
-    padding: 10px;
-    position: relative;
-    margin-bottom: 10px;
-    width:80%;
+.action,
+.recognized {
+	padding: 10px;
+	position: relative;
+	margin-bottom: 10px;
+	width: 80%;
 }
 
 .action {
-    text-align: right;
-    background-color: #ddd;
-    margin-left:20%;
-    border-radius: 5px 5px 0 5px;
-    color: purple;
+	text-align: right;
+	background-color: #ddd;
+	margin-left: 20%;
+	border-radius: 5px 5px 0 5px;
+	color: purple;
 }
 
 .action:after {
-    content:"";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-width: 18px;
-    border-style: solid;
-    border-color: transparent transparent #ddd transparent;
-    bottom: 0px;
-    right: -17px;
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-width: 18px;
+	border-style: solid;
+	border-color: transparent transparent #ddd transparent;
+	bottom: 0px;
+	right: -17px;
 }
 
 .recognized {
-    text-align: left;
-    background-color: #eee;
-    color: purple;
-    font-weight: bold;
-    border-radius: 5px 5px 5px 0;
+	text-align: left;
+	background-color: #eee;
+	color: purple;
+	font-weight: bold;
+	border-radius: 5px 5px 5px 0;
 }
 
 .recognized:after {
-    content:"";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-width: 18px;
-    border-style: solid;
-    border-color: transparent transparent #eee transparent;
-    bottom: 0px;
-    left: -17px;
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-width: 18px;
+	border-style: solid;
+	border-color: transparent transparent #eee transparent;
+	bottom: 0px;
+	left: -17px;
 }
 
 .recognized > div:before {
-    content: open-quote
+	content: open-quote
 }
 
 .recognized > div:after {
-    content: close-quote
+	content: close-quote
 }
 
 #conversation {
-    padding: 20px;
+	padding: 20px;
 }
 
 #conversation::before {
-    content:"";
-    height: 1px;
-    width: 200px;
-    background-color: #ddd;
-    display: block;
-    margin: 10px auto;
+	content: "";
+	height: 1px;
+	width: 200px;
+	background-color: #ddd;
+	display: block;
+	margin: 10px auto;
 }
 
 #conversation img {
-    margin-top: 5px;
+	margin-top: 5px;
 }

@@ -16,4 +16,18 @@ window.addEventListener("load", function () {
 		js.src = "//connect.facebook.net/en_US/sdk.js";
 		fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));
+
+	document.getElementById("facebook").addEventListener('click', function () {
+		FB.login(function (response) {
+			if (response.authResponse) {
+				console.log('Welcome!  Fetching your information.... ');
+				FB.api('/me', function (response) {
+					window.location = "search.html";
+				});
+			} else {
+				console.log('User cancelled login or did not fully authorize.');
+			}
+		});
+	});
+
 });
