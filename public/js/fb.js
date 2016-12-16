@@ -16,7 +16,7 @@ window.addEventListener("load", function () {
 		js.src = "//connect.facebook.net/en_US/sdk.js";
 		fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));
-
+	
 	document.getElementById("facebook").addEventListener('click', function () {
 		FB.login(function (response) {
 			if (response.authResponse) {
@@ -29,5 +29,6 @@ window.addEventListener("load", function () {
 			}
 		});
 	});
+	
 
 });
