@@ -171,7 +171,7 @@ function getOutput(item){
 	'<div class="list-center">' +
 	'<h3><a class="fancybox fancybox.iframe" href="http://www.youtube.com/embed/'+videoId+'">'+title+'</a></h3>' +
 	'<small>By <span class="cTitle">'+channelTitle+'</span> on '+videoDate+'</small>' +
-	// '<p>'+description+'</p>' +
+	//'<p>'+description+'</p>' +
 	'</div>' +
 	'</li>' +
 	'<div class="clearfix"></div>' +

@@ -6,6 +6,7 @@
 
 html {
 	overflow: auto;
+	overflow-x: hidden;
 }
 
 body {
@@ -17,11 +18,7 @@ body::-webkit-scrollbar {
 	width: 12px;
 }
 
-.ver-perfil {
-	margin-top: -27px;
-	width: 12em;
-	font-size: 20px;
-}
+
 
 
 /* Track */
@@ -81,6 +78,13 @@ body::-webkit-scrollbar-thumb:window-inactive {
 
 .contenedor-voz {
 	background-image: url(../img/img-3.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+}
+.contenedor-youtube{
+	background-image: url(../img/img-4.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -259,6 +263,12 @@ ul {
 
 /* VER PERFIL */
 
+.ver-perfil {
+	margin-top: -2em;
+	width: 12em;
+	font-size: 20px;
+}
+
 img .circle {
 	width: 7em;
 	height: 6em;
@@ -266,4 +276,32 @@ img .circle {
 
 #name {
 	font-size: 20px;
+}
+
+button,
+select {
+	text-transform: none;
+	color: black;
+	width: 7em;
+	font-size: 1.5rem;
+}
+
+
+/* SEARCH */
+
+.fieldcontainer {
+	width: 50%;
+	margin: 0 auto;
+}
+.search-field {
+	font-size: 1.4rem !important;
+}
+
+.list-center a {
+	color: #fff;
+	
+}
+.list-center h3 {
+	width: 50%;
+	margin: 0 auto;
 }
