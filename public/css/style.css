@@ -70,6 +70,9 @@ body::-webkit-scrollbar-thumb:window-inactive {
 .botones {
 	padding: 4vh;
 }
+.btn-spotify , .btn-fb{
+	width: 65%;
+}
 
 
 /*PÁGINA BUSCAR-VOZ*/
@@ -191,20 +194,20 @@ ul {
 	margin-left: 30px;
 }
 
-.action,
-.recognized {
-	padding: 10px;
-	position: relative;
-	margin-bottom: 10px;
-	width: 80%;
+.action {
+    text-align: right;
+    background-color: #ddd;
+    margin-left: 50%;
+    border-radius: 5px 5px 0 5px;
+    color: purple;
+    background-color: white;
 }
 
-.action {
-	text-align: right;
-	background-color: #ddd;
-	margin-left: 20%;
-	border-radius: 5px 5px 0 5px;
-	color: purple;
+.action, .recognized {
+    padding: 10px;
+    position: relative;
+    margin-bottom: 10px;
+    width: 60%;
 }
 
 .action:after {
@@ -248,16 +251,18 @@ ul {
 }
 
 #conversation {
-	padding: 20px;
+    padding: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 #conversation::before {
-	content: "";
-	height: 1px;
-	width: 200px;
-	background-color: #ddd;
-	display: block;
-	margin: 10px auto;
+    content: "";
+    height: 1px;
+    width: 200px;
+    background-color: #ddd;
+    display: block;
+    margin: 45px auto;
 }
 
 #conversation img {
