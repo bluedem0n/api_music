@@ -2,8 +2,8 @@ var express = require("express");
 var request = require("request");
 var querystring = require("querystring");
 var cookieParser = require("cookie-parser");
-var client_id = "a8556ddfad6a4136883d2c2dc6904f51";
-var client_secret = "97452f806f1743f38e00bebcfc606a49";
+var client_id = "90ad261f25d5451ca33245d010f502f5";
+var client_secret = "370fed587a104613b185b3f64b209d5a";
 var redirect_uri = "http://localhost:8085/search.html";
 
 var generateRandomString = function(length) {

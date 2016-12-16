@@ -9,11 +9,18 @@ html {
 }
 
 body {
-	font-family: 'Unica One', cursive;
+	font-family: 'Unica One', sans-serif;
+	font-family: 'Unica One', sans-serif;
 }
 
 body::-webkit-scrollbar {
 	width: 12px;
+}
+
+.ver-perfil {
+	margin-top: -27px;
+	width: 12em;
+	font-size: 20px;
 }
 
 
@@ -73,23 +80,33 @@ body::-webkit-scrollbar-thumb:window-inactive {
 /*PÁGINA BUSCAR-VOZ*/
 
 .contenedor-voz {
-	background-image: url(../img/img-3.jpg);
+	background-image: url(../img/img-3.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
 }
-.perfil{
+
+.perfil {
 	position: absolute;
 	margin-top: 2em;
 	right: 0;
 }
+
 .mic {
 	color: white;
 }
 
 .mic i {
-	font-size: 15rem;
+	font-size: 12rem;
+}
+
+.commands {
+	font-size: 25px;
+}
+
+.voice {
+	color: #039be5;
 }
 
 .mic h4 {
@@ -99,7 +116,11 @@ body::-webkit-scrollbar-thumb:window-inactive {
 
 .mic p {
 	position: relative;
-	top: 7vh;
+	top: 0;
+	text-align: center;
+	font-size: 24px;
+	width: 50%;
+	margin: 0 auto;
 }
 
 .logo img {
@@ -233,4 +254,16 @@ ul {
 
 #conversation img {
 	margin-top: 5px;
+}
+
+
+/* VER PERFIL */
+
+img .circle {
+	width: 7em;
+	height: 6em;
+}
+
+#name {
+	font-size: 20px;
 }
