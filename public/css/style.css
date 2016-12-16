@@ -19,8 +19,6 @@ body::-webkit-scrollbar {
 }
 
 
-
-
 /* Track */
 
 body::-webkit-scrollbar-track {
@@ -83,7 +81,8 @@ body::-webkit-scrollbar-thumb:window-inactive {
 	background-attachment: fixed;
 	background-position: center center;
 }
-.contenedor-youtube{
+
+.contenedor-youtube {
 	background-image: url(../img/img-4.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -129,6 +128,11 @@ body::-webkit-scrollbar-thumb:window-inactive {
 
 .logo img {
 	height: 25vh;
+}
+
+.logo-motion img {
+	height: 30vh;
+	float: right;
 }
 
 .share-icons {
@@ -293,15 +297,19 @@ select {
 	width: 50%;
 	margin: 0 auto;
 }
+
 .search-field {
 	font-size: 1.4rem !important;
 }
 
 .list-center a {
 	color: #fff;
-	
 }
+
 .list-center h3 {
 	width: 50%;
 	margin: 0 auto;
 }
+
+
+/* MOTION DETECTION */

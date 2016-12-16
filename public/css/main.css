@@ -25,7 +25,7 @@ video {
 #content {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 4em;
     right: 0;
     bottom: 0;
     overflow: hidden;
@@ -160,7 +160,7 @@ video {
 }
 
 #canvas-blended {
-    display: none;
+    display: none !important;
     position: absolute;
     bottom: 0px;
     right: 0;
