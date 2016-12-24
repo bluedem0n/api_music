@@ -6,7 +6,7 @@ Integraciones de API:
 - Facebook
 - Twitter
 
-![](http://i64.tinypic.com/14brlkx.png)
+![](https://s29.postimg.org/3sbicco07/home.png)
 ### [Ir al demo](https://sthecrash.github.io/api_music/public/)
 
 
@@ -15,6 +15,10 @@ Integraciones de API:
 #### Login con Facebook
   
 ![](https://s30.postimg.org/lbpmg385t/apifb.png)
+
+#### Login con Spotify
+  
+![](https://s29.postimg.org/vtpjq1taf/spotify.png)
 
 #### Busqueda por Voz: 
   
@@ -31,6 +35,7 @@ Integraciones de API:
 - Con tu camara debes situarte por alguno de los cuadrados (solo reconoce colores oscuros)
 
 - Se mostrará algo como esto : 
+
  ![](https://s30.postimg.org/g2uli7pqp/motion_detection.png)
  
 #### Busqueda por Spotify: 
@@ -38,12 +43,21 @@ Integraciones de API:
 - Debes escribir un artista o una canción
 
 - Se mostrará algo como esto : 
+
  ![](https://s30.postimg.org/i650pvpjl/dj.png)
  
 #### Busqueda por Youtube: 
-  
+ ![](https://s29.postimg.org/wki9vtvnr/youtube.png)
+ 
 - Debes escribir un artista o una canción
 
 - Se mostrará algo como esto : 
- ![](https://s30.postimg.org/i650pvpjl/dj.png)
+
+ ![](https://s29.postimg.org/3w5bslthj/youtube2.png)
+ 
+- Y podrás escuchar tu canción y ver el video
+
+ ![](https://s29.postimg.org/4zu1ib3if/youtube3.png)
+ 
+
 
