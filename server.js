@@ -2,8 +2,8 @@ var express = require("express");
 var request = require("request");
 var querystring = require("querystring");
 var cookieParser = require("cookie-parser");
-var client_id = "90ad261f25d5451ca33245d010f502f5";
-var client_secret = "370fed587a104613b185b3f64b209d5a";
+var client_id = "08edd3a2f2634a9e8838b10a167f4f5c";
+var client_secret = "8efc2d0ed8494067b0510e690d20f94f";
 var redirect_uri = "https://sthecrash.github.io/api_music/public/search.html";
 
 var generateRandomString = function(length) {
