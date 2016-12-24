@@ -21,7 +21,29 @@ Integraciones de API:
 - Al decir Play + nombre del artista
   
  ![](https://s30.postimg.org/y9hhpor2p/search.png)
+ 
+ - Se mostrará algo como esto :
+ 
+  ![](https://s30.postimg.org/g44jbmrkh/playsong.png)
 
-## Ver Perfil y seleccionar Opciones
+#### Al seleccionar Motion Detection: 
   
- ![](https://s30.postimg.org/onnx9dzwx/profile.png)
+- Con tu camara debes situarte por alguno de los cuadrados (solo reconoce colores oscuros)
+
+- Se mostrará algo como esto : 
+ ![](https://s30.postimg.org/g2uli7pqp/motion_detection.png)
+ 
+#### Busqueda por Spotify: 
+  
+- Debes escribir un artista o una canción
+
+- Se mostrará algo como esto : 
+ ![](https://s30.postimg.org/i650pvpjl/dj.png)
+ 
+#### Busqueda por Youtube: 
+  
+- Debes escribir un artista o una canción
+
+- Se mostrará algo como esto : 
+ ![](https://s30.postimg.org/i650pvpjl/dj.png)
+
