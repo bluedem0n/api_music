@@ -94,6 +94,13 @@ body::-webkit-scrollbar-thumb:window-inactive {
 	background-attachment: fixed;
 	background-position: center center;
 }
+.contenedor-spoti {
+	background-image: url(../img/img-5.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+}
 
 .perfil {
 	position: absolute;
