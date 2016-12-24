@@ -68,13 +68,17 @@
 		alert('Webcam error!', e);
 	};
 
-	if (navigator.webkitGetUserMedia) {
-		navigator.webkitGetUserMedia({video: true}, function(color_stream) {
-			video.src = window.webkitURL.createObjectURL(color_stream);
-			navigator.webkitGetUserMedia({video: { 'mandatory': { 'depth': "aligned"}}}, function(depth_stream) {
-				depth.src = window.webkitURL.createObjectURL(depth_stream);
+	if (navigator.getUserMedia) {
+		navigator.getUserMedia({video: true}, function(color_stream) {
+			video.src = window.URL.createObjectURL(color_stream);
+			navigator.getUserMedia({video: true}, function(depth_stream) {
+				depth.src = window.URL.createObjectURL(depth_stream);
 				initialize();
 			}, webcamError);
+			/*navigator.getUserMedia({video: { 'mandatory': { 'depth': "aligned"}}}, function(depth_stream) {
+				depth.src = window.URL.createObjectURL(depth_stream);
+				initialize();
+			}, webcamError);*/
 		}, webcamError);
 	} else {
 		console.log("getUserMedia is not supported.")
@@ -119,14 +123,14 @@
 		soundContext = new AudioContext();
 		bufferLoader = new BufferLoader(soundContext,
 			[
-				'sounds/nota8.ogg',
-				'sounds/nota9.ogg',
-				'sounds/nota10.ogg',
-				'sounds/nota11.ogg',
-				'sounds/note5.ogg',
-				'sounds/note6.ogg',
-				'sounds/note7.ogg',
-				'sounds/note8.ogg'
+				'sounds/note1.ogg',
+				'sounds/note2.ogg',
+				'sounds/note3.ogg',
+				'sounds/note4.ogg',
+				'sounds/note12.ogg',
+				'sounds/note9.ogg',
+				'sounds/note10.ogg',
+				'sounds/note11.ogg'
 			],
 			finishedLoading
 		);
